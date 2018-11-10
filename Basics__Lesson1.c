@@ -16,68 +16,57 @@ int main()
    
 					{ 11, 12 },
 			    
-            { 13, 14 },
+            				{ 13, 14 },
 			    
-            {15, 16 },
+            				{15, 16 },
 				
-        { 17,18 },
+        				{ 17,18 },
 				
-        {19,20}
+        				{ 19,20 }
 
 				 };
-
 
     
     int sample_2DArray_Way3[][2]={21,22,23,24,25,26,27,28,29,30};
 
     
     
-printf("%d\n",sample_2DArray_Way1[0][0]);
+    printf("%d\n",sample_2DArray_Way1[0][0]);
 
-        printf("%d\n",*(sample_2DArray_Way1[0]+1));
+    printf("%d\n",*(sample_2DArray_Way1[0]+1));
 
-        printf("%d\n",*(*(sample_2DArray_Way1+0)+2));
+    printf("%d\n",*(*(sample_2DArray_Way1+0)+2));
 
-        printf("\n\nMethod 1\n\n");
+    printf("\n\nMethod 1\n\n");
 
-        Test1(sample_2DArray_Way1,r,c);
+    Test1(sample_2DArray_Way1,r,c);
 
-        printf("\n\nMethod 2\n\n");
+    printf("\n\nMethod 2\n\n");
 
-        Test2(sample_2DArray_Way2,r,c);
+    Test2(sample_2DArray_Way2,r,c);
 
         /*
-    Print the addresses of each element of all the above 3  2dArray 
-    */
+    		Print the addresses of each element of all the above 3  2dArray 
+    	*/
 
-    
-    
-	return 0;
+    return 0;
 
 }
 
 
 
 void Test1(int *Arr1,int r,int c)
-
 {
 
     int i,j;
 
     for(i=0;i<r;i++)
-
     {
-        
 	for(j=0;j<c;j++)
-
         {
-            
 		printf("%d\t",*(Arr1+i*c+j));
-
         }
-
-       printf("\n");
-
+	printf("\n");
     }
 
 }
@@ -85,39 +74,27 @@ void Test1(int *Arr1,int r,int c)
 
 
 void Test2(int Arr2[][2],int r,int c)
-
 {
 
     int i,j;
 
     for(i=0;i<r;i++)
-
     {
-        
 	for(j=0;j<c;j++)
-
         {
-            
              printf("%d\t",Arr2[i][j]);
-
         }
-       
-	 printf("\n");
-
+	printf("\n");
     }
-    
-
+ 
 }
 
 
 
 
 void learned()
-
 {
-    
-
-	//Fill what you have learnt in this lesson( Below comments)
+  	//Fill what you have learnt in this lesson( Below comments)
  
 	   /*
     Sample1: Got to know how contiguous memory allocation is done
