@@ -1,5 +1,5 @@
 /*
-    Given a matrix(2D array), return transpose of that matrix
+    Given a matrix(2D array), print transpose of that matrix
 
 
     Ex:
@@ -22,17 +22,36 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-void transpose(int *,int ,int );
+#define ROW 3
+#define COLUMN 3
+
+void transpose(int matrix[ROW][COLUMN],result[ROW][COLUMN])
+{
+	//Get Transpose of matrix and print it here..
+
+}
+
+
 int main()
 {
-/*
-Allocate memory dynamically
-*/
- int Matrix[][3]={1,2,3,4,5,6,7,8,9},row=3,column=3;//Make sure your code accepts matrix of different dimensions
- transpose(Matrix,row,column);
-return 0;
+
+       //Make sure your code accepts matrix of different dimensions
+    
+
+	int matrix[ROW][COLUMN] = { { 1, 2, 3 }, 
+                      		    { 4, 5, 6 }, 
+                                    { 7, 8, 9 } }; 
+	int result[ROW][COLUMN];
+	
+	/* 
+	int i,j;
+	for (i=0;i<ROW;i++){
+		for(j=0;j<COLUMN;j++){
+			scanf("%d",&matrix[i][j]);
+	}
+	*/
+ 
+ 	transpose(matrix,result);
+	return 0;
 }
-void transpose(int *Arr,int row,int col)
-{
-    //Get Transpose
-}
+

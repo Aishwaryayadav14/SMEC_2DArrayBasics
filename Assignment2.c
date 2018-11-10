@@ -16,8 +16,10 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+#define ROW 3
+#define COLUMN 3
 
-int diffOfSum(int matrix[][])
+int diffOfSum(int matrix[ROW][COLUMN])
 {
 	// Write your actual solution here..  Given, a square matrix  return absolute difference of sum of diagonals(left and right)
 
@@ -30,11 +32,23 @@ int diffOfSum(int matrix[][])
 int main()
 {
     /*
-    Allocate memory dynamically and do write code that works for all input(Different size 3,4,5....)
+        Do write code that works for all inputs(Different size 3,4,5....)
     */
+
+	int matrix[ROW][COLUMN] = { { 1, 2, 3 }, 
+                      		    { 4, 5, 6 }, 
+                                    { 7, 8, 9 } }; 
+	
+	/* 
+	int i,j;
+	for (i=0;i<ROW;i++){
+		for(j=0;j<COLUMN;j++){
+			scanf("%d",&matrix[i][j]);
+	}
+	*/
 	
 	
 	int result = diffOfSum(matrix);
-	print("%d",result);
-    return 0;
+	print("\nResult = %d",result);
+    	return 0;
 }
