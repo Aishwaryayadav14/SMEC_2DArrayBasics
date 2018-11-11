@@ -4,6 +4,11 @@ void Test1(int *,int ,int);
 
 void Test2(int Arr2[][2],int r,int c);
 
+/*
+In this lesson you will learn how to declare a 2D Array and how to pass it to various methods. 
+-> Also how contigious allocation of 2d Arrays work.
+
+*/
 int main()
 
 {
@@ -46,9 +51,10 @@ int main()
     Test2(sample_2DArray_Way2,r,c);
 
         /*
-    		Print the addresses of each element of all the above 3  2dArray 
+	Task - 1
+    	Print the addresses of each element of all the above 3  2dArray
+		
     	*/
-
     return 0;
 
 }
@@ -68,6 +74,11 @@ void Test1(int *Arr1,int r,int c)
         }
 	printf("\n");
     }
+	 
+    /*
+    How did the above notation worked ? 
+    -->
+    */
 
 }
 
@@ -86,17 +97,40 @@ void Test2(int Arr2[][2],int r,int c)
         }
 	printf("\n");
     }
+    /*
+    How did the above notation worked ? 
+    -->
+    */
  
 }
 
+/*
+Assume an array of rows r and cols c is given. Ex arr[5][4]
+You need to print first element, skip K elements, and print the next element , skip K elements and print next element
+and so on.
+Ie assume arr is arr[5][4] and K = 2
+Arr 
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15 16
+You will print 1,4,7,10,13,16.
+Ie (print 1, (2,3 will be skipped), print 4 , (5,6 skip), 7 print, (8,9 skip) ... 
+
+This code should be written in a single loop.
+*/
+void task2(int *arr,int r,int c,int k) {
+	
+	
+}
 
 
 
 void learned()
 {
-  	//Fill what you have learnt in this lesson( Below comments)
+    //Fill what you have learnt in this lesson( Below comments)
  
-	   /*
+    /*
     Sample1: Got to know how contiguous memory allocation is done
     
     */
